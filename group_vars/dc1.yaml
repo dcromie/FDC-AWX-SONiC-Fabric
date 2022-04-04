@@ -1,7 +1,7 @@
 ansible_httpapi_use_ssl: true
 ansible_httpapi_validate_certs: false
 ansible_network_os: dellemc.enterprise_sonic.sonic
-ansible_password: YourPaSsWoRd
+ansible_password: Dell123!
 ansible_user: admin
 bgp_asn: '{{ host_data[inventory_hostname].bgp_asn }}'
 bgp_router_id: '{{ host_data[inventory_hostname].bgp_router_id }}'
@@ -15,8 +15,8 @@ host_data:
     loopback0_ip: 10.0.2.1/32
     loopback1_ip: 1.0.1.1/32
     mclag_peer_ip: 10.0.2.2
-    mgmt_gateway_ip: 10.10.10.1
-    mgmt_ip: 10.10.10.11/24
+    mgmt_gateway_ip: 192.168.1.1
+    mgmt_ip: 192.168.1.11/24
     vtep_name: vtep1
   dc1-LEAF-2:
     bgp_asn: 64625
@@ -25,8 +25,8 @@ host_data:
     loopback0_ip: 10.0.2.2/32
     loopback1_ip: 1.0.1.1/32
     mclag_peer_ip: 10.0.2.1
-    mgmt_gateway_ip: 10.10.10.1
-    mgmt_ip: 10.10.10.12/24
+    mgmt_gateway_ip: 192.168.1.1
+    mgmt_ip: 192.168.1.12/24
     vtep_name: vtep1
   dc1-LEAF-3:
     bgp_asn: 64626
@@ -35,8 +35,8 @@ host_data:
     loopback0_ip: 10.0.2.3/32
     loopback1_ip: 1.0.1.2/32
     mclag_peer_ip: 10.0.2.4
-    mgmt_gateway_ip: 10.10.10.1
-    mgmt_ip: 10.10.10.13/24
+    mgmt_gateway_ip: 192.168.1.1
+    mgmt_ip: 192.168.1.13/24
     vtep_name: vtep3
   dc1-LEAF-4:
     bgp_asn: 64626
@@ -45,21 +45,21 @@ host_data:
     loopback0_ip: 10.0.2.4/32
     loopback1_ip: 1.0.1.2/32
     mclag_peer_ip: 10.0.2.3
-    mgmt_gateway_ip: 10.10.10.1
-    mgmt_ip: 10.10.10.14/24
+    mgmt_gateway_ip: 192.168.1.1
+    mgmt_ip: 192.168.1.14/24
     vtep_name: vtep3
   dc1-SPINE-1:
     bgp_asn: 64600
     bgp_router_id: 10.0.1.1
     loopback0_ip: 10.0.1.1/32
-    mgmt_gateway_ip: 10.10.10.1
-    mgmt_ip: 10.10.10.21/24
+    mgmt_gateway_ip: 192.168.1.1
+    mgmt_ip: 192.168.1.21/24
   dc1-SPINE-2:
     bgp_asn: 64600
     bgp_router_id: 10.0.1.2
     loopback0_ip: 10.0.1.2/32
-    mgmt_gateway_ip: 10.10.10.1
-    mgmt_ip: 10.10.10.22/24
+    mgmt_gateway_ip: 192.168.1.1
+    mgmt_ip: 192.168.1.22/24
 logging_servers:
   - name: 10.10.10.202
     port: 154
