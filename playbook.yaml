@@ -1,4 +1,5 @@
 - hosts: dc1
+  debugger: on_failed
   connection: httpapi
   gather_facts: false
   collections:
